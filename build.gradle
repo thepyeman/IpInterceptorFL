@@ -30,8 +30,12 @@ allprojects {
         expand(Map.of("projectVersionString", project.version))
     }
 
+    /*test {
+        useJUnitPlatform()
+    }*/
+
 }
 
-test {
-    useJUnitPlatform()
+gradle.buildFinished {
+    project.buildDir.deleteDir()
 }

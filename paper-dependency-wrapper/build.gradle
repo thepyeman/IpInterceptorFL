@@ -1,4 +1,4 @@
-// This module is used to add Paper dependency, for Java8 support.
+// This module is used to add Paper dependency, for Java8 - Java16 support.
 
 apply plugin: "com.github.johnrengelman.shadow"
 
