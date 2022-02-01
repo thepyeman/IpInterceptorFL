@@ -1,6 +1,6 @@
 name: ProtocolStringReplacer
 version: ${projectVersionString}
-main: me.rothes.protocolstringreplacer.ProtocolStringReplacer
+main: io.github.rothes.protocolstringreplacer.bukkit.ProtocolStringReplacer
 author: Rothes
 api-version: 1.13
 softdepend:

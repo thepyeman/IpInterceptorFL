@@ -43,7 +43,7 @@ shadowJar {
     archiveFileName.set(fileName)
 
     minimize()
-    relocate("org.apache.commons.collections", "me.rothes.protocolstringreplacer.libs.org.apache.commons.collections")
-    relocate("org.neosearch.stringsearcher", "me.rothes.protocolstringreplacer.libs.org.neosearch.stringsearcher")
-    relocate("org.bstats", "me.rothes.protocolstringreplacer.libs.org.bstats")
+    relocate("org.apache.commons.collections", "io.github.rothes.protocolstringreplacer.libs.org.apache.commons.collections")
+    relocate("org.neosearch.stringsearcher", "io.github.rothes.protocolstringreplacer.libs.org.neosearch.stringsearcher")
+    relocate("org.bstats", "io.github.rothes.protocolstringreplacer.libs.org.bstats")
 }
