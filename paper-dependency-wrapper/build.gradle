@@ -1,0 +1,33 @@
+// This module is used to add Paper dependency, for Java8 support.
+
+apply plugin: "com.github.johnrengelman.shadow"
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+
+    maven {
+        url = "https://papermc.io/repo/repository/maven-public/"
+    }
+}
+
+dependencies {
+    implementation("io.papermc.paper:paper-api:1.18.1-R0.1-SNAPSHOT")
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+compileJava {
+    options.encoding = "UTF-8"
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+    options.release.set(17)
+}
+
+shadowJar {
+    String fileName = "Paper-Wrapper.jar"
+    archiveFileName.set(fileName)
+}

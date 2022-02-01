@@ -1,0 +1,3 @@
+include 'paper-dependency-wrapper'
+include 'bukkit'
+

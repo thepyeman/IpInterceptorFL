@@ -21,7 +21,7 @@ import java.io.File;
 import java.util.Collection;
 import java.util.Map;
 
-public class PsrWrappedLineReader implements LineReader{
+public class PsrWrappedLineReader implements LineReader {
 
     private LineReader reader;
 
